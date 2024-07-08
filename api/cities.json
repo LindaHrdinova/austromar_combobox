@@ -44,7 +44,7 @@
     "Locode": "USHXV",
     "ZIP": "48189",
     "GPS": "",
-    "Flag": "../../components/city/img_flags/US.png",
+    "Flag": "img_flags/US.png",
     "Function": "--3-----"
   },
   {
@@ -56,7 +56,7 @@
     "Locode": "SEHBO",
     "ZIP": null,
     "GPS": "5833N 01116E",
-    "Flag": "../../components/city/img_flags/SE.png",
+    "Flag": "img_flags/SE.png",
     "Function": "1-------"
   },
   {
@@ -68,7 +68,7 @@
     "Locode": "SEHBG",
     "ZIP": null,
     "GPS": "",
-    "Flag": "../../components/city/img_flags/SE.png",
+    "Flag": "img_flags/SE.png",
     "Function": "1-------"
   }
 ]
