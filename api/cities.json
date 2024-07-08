@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "20292",
+    "Name": "Hamburg",
+    "NameNoDiacritics": "Hamburg",
+    "Code": "HAM",
+    "CountryCode": "DE",
+    "Locode": "DEHAM",
+    "ZIP": null,
+    "GPS": "",
+    "Flag": "../../components/city/img_flags/DE.png",
+    "Function": "12345---"
+  },
+  {
+    "Id": "83403",
+    "Name": "Hamburg",
+    "NameNoDiacritics": "Hamburg",
+    "Code": "HMQ",
+    "CountryCode": "US",
+    "Locode": "USHMQ",
+    "ZIP": "19526",
+    "GPS": "4034N 07559W",
+    "Flag": "../../components/city/img_flags/US.png",
+    "Function": "-23-----"
+  },
+  {
+    "Id": "83401",
+    "Name": "Hamburg",
+    "NameNoDiacritics": "Hamburg",
+    "Code": "HG7",
+    "CountryCode": "US",
+    "Locode": "USHG7",
+    "ZIP": "14075",
+    "GPS": "4242N 07849W",
+    "Flag": "../../components/city/img_flags/US.png",
+    "Function": "-23-56--"
+  },
+  {
+    "Id": "83399",
+    "Name": "Hamburg",
+    "NameNoDiacritics": "Hamburg",
+    "Code": "HXV",
+    "CountryCode": "US",
+    "Locode": "USHXV",
+    "ZIP": "48189",
+    "GPS": "",
+    "Flag": "../../components/city/img_flags/US.png",
+    "Function": "--3-----"
+  }
+]

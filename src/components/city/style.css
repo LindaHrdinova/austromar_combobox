@@ -1,0 +1,49 @@
+.noGPS {
+  color: red;
+}
+
+.table__City {
+  display: flex;
+  padding: 10px;
+}
+
+.table__City--Flag {
+  padding: 7px;
+}
+
+.city__icon {
+  height: 20px;
+  padding: 2px;
+}
+
+.table__0 {
+  background-color: white;
+}
+
+
+.table__1 {
+  background-color: yellow;
+  width: 200px;
+}
+
+.table__2 {
+  background-color: green;
+  width: 200px;
+}
+
+.table__3 {
+  background-color: red;
+}
+
+.table__4 {
+  background-color: blue;
+}
+
+.table__cell--right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nameStrong {
+  font-weight: bold;
+}

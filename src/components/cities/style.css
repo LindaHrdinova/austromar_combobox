@@ -1,0 +1,11 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.cityBox {
+  background-color: #ddd;
+  width: 500px;
+}
