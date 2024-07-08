@@ -2,6 +2,7 @@ import { City } from '../city/city';
 import './style.css';
 import { useState, useEffect } from 'react';
 
+//načtení api
 export const HomePage = () => {
   const [citiesApi, setCitiesApi] = useState(null);
   const cisla = [1, 2, 3];
@@ -21,23 +22,25 @@ export const HomePage = () => {
         <h1>Austromar - city</h1>
       </header>
       <div className="cityBox">
-        <main>
-          <select name="cities" id="cities">
-            <option value=""></option>
-            {citiesApi === null
-              ? ''
-              : citiesApi.map((cityApi) => (
-                  <option value={cityApi.Id} key={cityApi.Id}>
-                    {cityApi.Name} - {cityApi.Id}
-                  </option>
-                ))}
-          </select>
+        <label for="citiesChoise">City:</label>
+        <input list="citiesList" id="cities" name="citiesChoise" />
+        <datalist id="citiesList">
           {citiesApi === null
-            ? ''
+            ? null
+            : citiesApi.map((cityApi) => (
+                <option value={cityApi.Id} key={cityApi.Id}>
+                  {cityApi.Name} - {cityApi.Id}
+                </option>
+              ))}{' '}
+        </datalist>
+
+        <div className="cities__box">
+          {citiesApi === null
+            ? null
             : citiesApi.map((cityApi) => (
                 <City city={cityApi} key={cityApi.Id} />
               ))}
-        </main>
+        </div>
       </div>
     </>
   );

@@ -42,11 +42,11 @@ export const City = ({ city }) => {
   };
 
   return (
-    <div>
+    <div div className="city__option">
       <table className="table__City">
         <thead>
           <tr>
-            <td rowSpan="2" className="table__City--Flag table__0">
+            <td rowSpan="2" className="table__City--Flag">
               <img
                 src={city.Flag}
                 alt={city.CountryCode + ' flag'}
@@ -56,24 +56,24 @@ export const City = ({ city }) => {
             <td
               className={
                 functionToString(city.Function)[0] === '1'
-                  ? 'table__1 nameStrong'
-                  : 'table__1'
+                  ? 'table__row nameStrong'
+                  : 'table__row'
               }
             >
               {city.Name}
             </td>
-            <td className="table__cell--right table__2">
+            <td className="table__cell--right table__row">
               {functionIcon(city.Function)}
             </td>
           </tr>
-          <tr className="table__tr--1">
-            <td className="table__3">
+          <tr>
+            <td className="table__text">
               <strong>{city.Locode}</strong>
               {city.ZIP === null ? null : `, ZIP: ${city.ZIP}`}
             </td>
-            <td className="table__cell--right table__4">
+            <td className="table__cell--right">
               {city.GPS === '' ? (
-                <span className="noGPS">No GPS</span>
+                <span className="table__text noGPS">No GPS</span>
               ) : (
                 <>
                   <img
@@ -81,7 +81,7 @@ export const City = ({ city }) => {
                     className="city__icon"
                     alt="satellite icon"
                   ></img>
-                  <span>{city.GPS}</span>
+                  <span className="table__text">{city.GPS}</span>
                 </>
               )}
             </td>

@@ -1,3 +1,8 @@
+.table__text {
+  color: #888;
+  font-size: 0.8rem;
+}
+
 .noGPS {
   color: red;
 }
@@ -7,36 +12,26 @@
   padding: 10px;
 }
 
+.city__option {
+  background-color: white;
+}
+
+.city__option:hover {
+  background-color: #ccc;
+}
+
 .table__City--Flag {
   padding: 7px;
 }
+
 
 .city__icon {
   height: 20px;
   padding: 2px;
 }
 
-.table__0 {
-  background-color: white;
-}
-
-
-.table__1 {
-  background-color: yellow;
+.table__row {
   width: 200px;
-}
-
-.table__2 {
-  background-color: green;
-  width: 200px;
-}
-
-.table__3 {
-  background-color: red;
-}
-
-.table__4 {
-  background-color: blue;
 }
 
 .table__cell--right {
@@ -45,5 +40,6 @@
 }
 
 .nameStrong {
+  text-transform: uppercase;
   font-weight: bold;
 }

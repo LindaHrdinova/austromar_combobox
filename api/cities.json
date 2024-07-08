@@ -46,5 +46,29 @@
     "GPS": "",
     "Flag": "../../components/city/img_flags/US.png",
     "Function": "--3-----"
+  },
+  {
+    "Id": "12345",
+    "Name": "Hamburgön",
+    "NameNoDiacritics": "Hamburgon",
+    "Code": "HBO",
+    "CountryCode": "SE",
+    "Locode": "SEHBO",
+    "ZIP": null,
+    "GPS": "5833N 01116E",
+    "Flag": "../../components/city/img_flags/SE.png",
+    "Function": "1-------"
+  },
+  {
+    "Id": "12346",
+    "Name": "Hamburgsund",
+    "NameNoDiacritics": "Hamburgsund",
+    "Code": "HBG",
+    "CountryCode": "SE",
+    "Locode": "SEHBG",
+    "ZIP": null,
+    "GPS": "",
+    "Flag": "../../components/city/img_flags/SE.png",
+    "Function": "1-------"
   }
 ]

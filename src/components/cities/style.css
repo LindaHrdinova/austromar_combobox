@@ -5,7 +5,13 @@ header {
   margin-top: 4rem;
 }
 
+.cities__box {
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+
 .cityBox {
   background-color: #ddd;
   width: 500px;
+  padding: 10px;
 }
