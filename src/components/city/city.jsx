@@ -1,48 +1,39 @@
 import './style.css';
+import imgSatellite from './img_icon/satellite.png';
+import imgPort from './img_icon/port_1.png';
+import imgTrain from './img_icon/train_2.png';
+import imgTruck from './img_icon/truck_3.png';
+import imgPlane from './img_icon/plane_4.png';
 
 export const City = ({ city }) => {
+  //převedení city.Function na array
   const functionToString = (functionType) => {
     return functionType.split('');
   };
 
+  //fuknce na zpracování role měst
   const functionIcon = (functionType) => {
     const type = functionToString(functionType);
     return (
       <>
         {type[0] === '1' ? (
-          <img
-            src="../../components/city/img_icon/port_1.png"
-            className="city__icon"
-            alt="satellite icon"
-          ></img>
+          <img src={imgPort} className="city__icon" alt="port icon"></img>
         ) : null}
         {type[1] === '2' ? (
-          <img
-            src="../../components/city/img_icon/train_2.png"
-            className="city__icon"
-            alt="satellite icon"
-          ></img>
+          <img src={imgTrain} className="city__icon" alt="train icon"></img>
         ) : null}
         {type[2] === '3' ? (
-          <img
-            src="../../components/city/img_icon/truck_3.png"
-            className="city__icon"
-            alt="satellite icon"
-          ></img>
+          <img src={imgTruck} className="city__icon" alt="truck icon"></img>
         ) : null}
         {type[3] === '4' ? (
-          <img
-            src="../../components/city/img_icon/plane_4.png"
-            className="city__icon"
-            alt="satellite icon"
-          ></img>
+          <img src={imgPlane} className="city__icon" alt="plane icon"></img>
         ) : null}
       </>
     );
   };
 
   return (
-    <div div className="city__option">
+    <div className="city__option">
       <table className="table__City">
         <thead>
           <tr>
@@ -77,7 +68,7 @@ export const City = ({ city }) => {
               ) : (
                 <>
                   <img
-                    src="../../components/city/img_icon/satellite.png"
+                    src={imgSatellite}
                     className="city__icon"
                     alt="satellite icon"
                   ></img>

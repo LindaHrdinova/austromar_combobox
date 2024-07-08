@@ -2,10 +2,10 @@ import { City } from '../city/city';
 import './style.css';
 import { useState, useEffect } from 'react';
 
-//načtení api
 export const HomePage = () => {
   const [citiesApi, setCitiesApi] = useState(null);
-  const cisla = [1, 2, 3];
+
+  //načtení api při načtení stránky
   useEffect(() => {
     const localApiCities = async () => {
       const response = await fetch('http://localhost:4000/api/cities');
@@ -18,20 +18,24 @@ export const HomePage = () => {
 
   return (
     <>
-      <header>
-        <h1>Austromar - city</h1>
-      </header>
       <div className="cityBox">
-        <label for="citiesChoise">City:</label>
+        <label htmlFor="citiesChoise">City: </label>
+        <br />
         <input list="citiesList" id="cities" name="citiesChoise" />
         <datalist id="citiesList">
           {citiesApi === null
             ? null
             : citiesApi.map((cityApi) => (
-                <option value={cityApi.Id} key={cityApi.Id}>
-                  {cityApi.Name} - {cityApi.Id}
-                </option>
-              ))}{' '}
+                <option
+                  value={cityApi.Id}
+                  label={
+                    cityApi.ZIP !== null
+                      ? `${cityApi.Name} - ${cityApi.ZIP}`
+                      : cityApi.Name
+                  }
+                  key={cityApi.Id}
+                ></option>
+              ))}
         </datalist>
 
         <div className="cities__box">
