@@ -6,6 +6,9 @@ import imgTruck from './img_icon/truck_3.png';
 import imgPlane from './img_icon/plane_4.png';
 
 export const City = ({ city }) => {
+  const flagUrl = city.Flag;
+  console.log(flagUrl);
+
   //převedení city.Function na array
   const functionToString = (functionType) => {
     return functionType.split('');
@@ -39,7 +42,7 @@ export const City = ({ city }) => {
           <tr>
             <td rowSpan="2" className="table__City--Flag">
               <img
-                src={city.Flag}
+                src={flagUrl}
                 alt={city.CountryCode + ' flag'}
                 height="30px"
               />
