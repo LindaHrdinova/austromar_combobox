@@ -8,7 +8,7 @@
     "Locode": "DEHAM",
     "ZIP": null,
     "GPS": "",
-    "Flag": "components/city/img_flags/DE.png",
+    "Flag": "src/components/city/img_flags/DE.png",
     "Function": "12345---"
   },
   {
