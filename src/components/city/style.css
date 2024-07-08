@@ -1,10 +1,15 @@
-.table__text {
-  color: #888;
-  font-size: 0.8rem;
+.city__option {
+  background-color: white;
 }
 
-.noGPS {
-  color: red;
+.city__option:hover {
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+
+.city__icon {
+  height: 20px;
+  padding: 2px;
 }
 
 .table__City {
@@ -12,23 +17,15 @@
   padding: 10px;
 }
 
-.city__option {
-  background-color: white;
-}
-
-.city__option:hover {
-  background-color: #ccc;
-}
-
 .table__City--Flag {
   padding: 7px;
 }
 
-
-.city__icon {
-  height: 20px;
-  padding: 2px;
+.table__text {
+  color: #888;
+  font-size: 0.8rem;
 }
+
 
 .table__row {
   width: 200px;
@@ -37,6 +34,10 @@
 .table__cell--right {
   display: flex;
   justify-content: flex-end;
+}
+
+.noGPS {
+  color: red;
 }
 
 .nameStrong {

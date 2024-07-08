@@ -8,7 +8,7 @@
     "Locode": "DEHAM",
     "ZIP": null,
     "GPS": "",
-    "Flag": "img_flags/DE.png",
+    "Flag": "/WWW/images/flags/DE.png",
     "Function": "12345---"
   },
   {
@@ -20,7 +20,7 @@
     "Locode": "USHMQ",
     "ZIP": "19526",
     "GPS": "4034N 07559W",
-    "Flag": "img_flags/US.png",
+    "Flag": "/WWW/images/flags/US.png",
     "Function": "-23-----"
   },
   {
@@ -32,7 +32,7 @@
     "Locode": "USHG7",
     "ZIP": "14075",
     "GPS": "4242N 07849W",
-    "Flag": "img_flags/US.png",
+    "Flag": "/WWW/images/flags/US.png",
     "Function": "-23-56--"
   },
   {
@@ -44,7 +44,7 @@
     "Locode": "USHXV",
     "ZIP": "48189",
     "GPS": "",
-    "Flag": "img_flags/US.png",
+    "Flag": "/WWW/images/flags/US.png",
     "Function": "--3-----"
   },
   {
@@ -56,7 +56,7 @@
     "Locode": "SEHBO",
     "ZIP": null,
     "GPS": "5833N 01116E",
-    "Flag": "img_flags/SE.png",
+    "Flag": "/WWW/images/flags/SE.png",
     "Function": "1-------"
   },
   {
@@ -68,7 +68,7 @@
     "Locode": "SEHBG",
     "ZIP": null,
     "GPS": "",
-    "Flag": "img_flags/SE.png",
+    "Flag": "/WWW/images/flags/SE.png",
     "Function": "1-------"
   }
 ]

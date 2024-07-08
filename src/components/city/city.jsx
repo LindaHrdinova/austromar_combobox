@@ -1,14 +1,6 @@
 import './style.css';
-import imgSatellite from './img_icon/satellite.png';
-import imgPort from './img_icon/port_1.png';
-import imgTrain from './img_icon/train_2.png';
-import imgTruck from './img_icon/truck_3.png';
-import imgPlane from './img_icon/plane_4.png';
 
 export const City = ({ city }) => {
-  const flagUrl = city.Flag;
-  console.log(flagUrl);
-
   //převedení city.Function na array
   const functionToString = (functionType) => {
     return functionType.split('');
@@ -20,16 +12,32 @@ export const City = ({ city }) => {
     return (
       <>
         {type[0] === '1' ? (
-          <img src={imgPort} className="city__icon" alt="port icon"></img>
+          <img
+            src="https://system.austromar.com/WWW/images/TransportMode_Transparent_1.png"
+            className="city__icon"
+            alt="port icon"
+          ></img>
         ) : null}
         {type[1] === '2' ? (
-          <img src={imgTrain} className="city__icon" alt="train icon"></img>
+          <img
+            src="https://system.austromar.com/WWW/images/TransportMode_Transparent_2.png"
+            className="city__icon"
+            alt="train icon"
+          ></img>
         ) : null}
         {type[2] === '3' ? (
-          <img src={imgTruck} className="city__icon" alt="truck icon"></img>
+          <img
+            src="https://system.austromar.com/WWW/images/TransportMode_Transparent_3.png"
+            className="city__icon"
+            alt="truck icon"
+          ></img>
         ) : null}
         {type[3] === '4' ? (
-          <img src={imgPlane} className="city__icon" alt="plane icon"></img>
+          <img
+            src="https://system.austromar.com/WWW/images/TransportMode_Transparent_4.png"
+            className="city__icon"
+            alt="plane icon"
+          ></img>
         ) : null}
       </>
     );
@@ -42,7 +50,7 @@ export const City = ({ city }) => {
           <tr>
             <td rowSpan="2" className="table__City--Flag">
               <img
-                src={flagUrl}
+                src={'https://system.austromar.com/' + city.Flag}
                 alt={city.CountryCode + ' flag'}
                 height="30px"
               />
@@ -71,7 +79,7 @@ export const City = ({ city }) => {
               ) : (
                 <>
                   <img
-                    src={imgSatellite}
+                    src="https://system.austromar.com/WWW/images/GPS.png"
                     className="city__icon"
                     alt="satellite icon"
                   ></img>
